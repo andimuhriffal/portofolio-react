@@ -5,6 +5,9 @@ import { SiMysql } from "react-icons/si";
 import { SiPhp } from "react-icons/si";
 import { SiLaravel } from "react-icons/si";
 import { motion } from "framer-motion";
+import { DiNginx } from "react-icons/di";
+import { SiTailwindcss } from "react-icons/si";
+import { VscAzure } from "react-icons/vsc";
 
 
 const iconVariants = (duration) => ({
@@ -91,6 +94,34 @@ const Technologies = () => {
         >
           <SiLaravel className="text-7xl text-red-700" />
         </motion.div>
+
+        <motion.div
+          variants={iconVariants(3)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <DiNginx className="text-7xl text-green-500" />
+        </motion.div>
+
+        <motion.div
+          variants={iconVariants(2)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiTailwindcss className="text-7xl text-blue-400" />
+        </motion.div>
+
+        <motion.div
+          variants={iconVariants(6)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <VscAzure className="text-7xl text-blue-500" />
+        </motion.div>
+
       </motion.div>
     </div>
   );
